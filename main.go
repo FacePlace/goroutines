@@ -1,7 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
-	fmt.Println("Template")
+	msg := "stuff"
+
+	go func(msg string) {
+		fmt.Println(msg)
+	}(msg)
+
+	time.Sleep(100 * time.Microsecond)
 }

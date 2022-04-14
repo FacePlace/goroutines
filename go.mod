@@ -1,3 +1,3 @@
-module github.com/FacePlace/go-template
+module github.com/FacePlace/goroutines
 
 go 1.18
